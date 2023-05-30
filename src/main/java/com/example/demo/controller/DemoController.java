@@ -27,6 +27,13 @@ public class DemoController {
         return service.length(str1,str2,str3);
     }
 
+    @GetMapping
+    @RequestMapping(value = "/get")
+    public String getMessage(){
+
+        return "My Sample App Success!!";
+    }
+
 
     @PostMapping
     @RequestMapping(value = "print")

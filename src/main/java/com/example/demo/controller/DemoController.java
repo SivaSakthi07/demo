@@ -31,7 +31,7 @@ public class DemoController {
     @RequestMapping(value = "/get")
     public String getMessage(){
 
-        return "My Sample App Success!!";
+        return "My Sample App Success - Trigger 2!!";
     }
 
 

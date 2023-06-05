@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class ServiceAspect {
 
-    @Around(value = "execution(* com.example.demo.service.DemoService.*(..)) && args(..)")
+    @Around(value = "execution(* com.example.demo.service.*.*(..)) && args(..)")
     public Object beforeAdvice(ProceedingJoinPoint joinPoint) throws Throwable {
         String methodName = joinPoint.getSignature().getName();
         String className = joinPoint.getTarget().getClass().getSimpleName();
